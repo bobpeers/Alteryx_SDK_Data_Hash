@@ -33,4 +33,4 @@ Takes the incoming data field and outputs a hash of the data using the selected 
 * whirlpool
 
 ## Outputs
-Sucessful operations will be out put to the O-Output, The hash will be appended to the incoming data.
+Sucessful operations will be output to the O-Output, The hash will be appended to the incoming data.
