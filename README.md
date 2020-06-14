@@ -5,7 +5,7 @@ Alteryx tool to hash an incoming data field
 ## Installation
 Download the yxi file and double click to install in Alteyrx. The tool will be installed in the __Developer__ category.
 
-![alt text](https://github.com/bobpeers/Alteryx_SDK_DataHash/blob/master/images/AlteryxCategory.png "Alteryx Developer Category")
+![alt text](https://github.com/bobpeers/Alteryx_SDK_Data_Hash/blob/master/images/Alteryx_Category.png "Alteryx Developer Category")
 
 ## Usage
 Takes the incoming data field and outputs a hash of the data using the selected hash, supports the following hashing algorithms.
