@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Data Hasher</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+</head>
+<body>
+  <h1>Data Hasher</h1>
+  <section>
+    <div class='info'>
+      <div>This tool calculates the cryptographic hash of the input data field.</div>
+    </div>
+  </section>
+  <form>
+    <fieldset>
+      <legend>XMSG("Select Options")</legend>
+      <section>
+        <label>XMSG("Select the field to hash:")</label>
+        <ayx data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'SourceField', dataType: 'FieldSelector', fieldType: 'All', anchorIndex:'0', connectionIndex:'0'}"></ayx>
+	</section>
+	<section>
+		<label>XMSG("Select the hashing algorithm:")</label>
+        <ayx data-ui-props="{dataName: 'HashField', type:'DropDown', widgetId:'HashDropdown'}"></ayx>
+	</section>
+  </fieldset>
+  </form>
+
+  <style>
+    .info {
+        border:2px solid #8B929A;
+        border-radius: 5px;
+        padding:10px;
+    }
+
+    .info>div {margin:10px 0 10px 0;}
+  
+    body {
+      font-size: 10pt;
+      font-family: Arial, sans-serif;
+      margin:20px;
+    }
+	
+    legend {
+	    border:none;
+    }
+	
+	fieldset {
+		border: 2px solid #8B929A;
+    border-radius: 5px;
+	}
+		
+	section,label, select, checkbox, ayx {
+		padding: 10px 0 10px 0;	
+	}
+  </style>
+  <script type="text/javascript">
+Alteryx.Gui.BeforeLoad = function (manager, AlteryxDataItems, json) {
+// Drop Down
+// ---------
+var stringSelector = new AlteryxDataItems.StringSelector('HashDropdown', {
+  optionList: [
+    {'label':'DSA','value':'DSA'},
+	{'label':'DSA-SHA','value':'DSA-SHA'},
+	{'label':'MD4','value':'md4'},
+	{'label':'MD5','value':'md5'},
+	{'label':'RIPEMD160','value':'ripemd160'},
+	{'label':'SHA','value':'sha'},
+	{'label':'SHA1','value':'sha1'},
+	{'label':'SHA224','value':'sha224'},
+	{'label':'SHA256','value':'sha256'},
+	{'label':'SHA384','value':'sha384'},
+	{'label':'SHA512','value':'sha512'},
+	{'label':'blake2b','value':'blake2b'},
+	{'label':'blake2s','value':'blake2s'},
+	{'label':'dsaEncryption','value':'dsaEncryption'},
+	{'label':'dsaWithSHA','value':'dsaWithSHA'},
+	{'label':'ecdsa-with-SHA1','value':'ecdsa-with-SHA1'},
+	{'label':'sha3_224','value':'sha3_224'},
+	{'label':'sha3_256','value':'sha3_256'},
+	{'label':'sha3_384','value':'sha3_384'},
+	{'label':'sha3_512','value':'sha3_512'},
+	{'label':'whirlpool','value':'whirlpool'}
+  ]
+})
+manager.addDataItem(stringSelector)
+manager.bindDataItemToWidget(stringSelector, 'HashDropdown') // Bind to widget
+}
+</script>
+</body>
+</html>

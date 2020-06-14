@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="DataHashEngine.py" SDKVersion="10.1" />
+  <GuiSettings Html="DataHashGUI.html" Icon="DataHash/DataHashIcon.png" Help="" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection" Label="I"/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection" Label="O"/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>Data Hasher</Name>
+      <Description>Calculates hashes of input data using the chosen algorithm</Description>
+      <CategoryName>Developer</CategoryName>
+      <SearchTags>python, hash, cryptographic</SearchTags>
+      <ToolVersion>1.0</ToolVersion>
+      <Author>Bob Peers</Author>
+      <Company>Inviso A/S</Company>
+      <Copyright>2020</Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>
