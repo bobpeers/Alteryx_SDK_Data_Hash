@@ -38,4 +38,4 @@ Sucessful operations will be output to the O-Output, The hash will be appended t
 ## Example Workflow
 Map the data to be hashed in the tool and select the hashing algorithm.
 
-![alt text](https://github.com/bobpeers/Alteryx_SDK_Data_Hash/blob/master/images/Dash Hash flow.png "Alteryx Example Workflow")
+![alt text](https://github.com/bobpeers/Alteryx_SDK_Data_Hash/blob/master/images/Dash%20Hash%20flow.png" "Exampe Alteryx Workflow")
