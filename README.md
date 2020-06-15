@@ -34,3 +34,8 @@ Takes the incoming data field and outputs a hash of the data using the selected 
 
 ## Outputs
 Sucessful operations will be output to the O-Output, The hash will be appended to the incoming data.
+
+## Example Workflow
+Map the data to be hashed in the tool and select the hashing algorithm.
+
+![alt text](https://github.com/bobpeers/Alteryx_SDK_Data_Hash/blob/master/images/Dash Hash flow.png "Alteryx Example Workflow")
