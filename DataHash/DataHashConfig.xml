@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <AlteryxJavaScriptPlugin>
   <EngineSettings EngineDll="Python" EngineDllEntryPoint="DataHashEngine.py" SDKVersion="10.1" />
-  <GuiSettings Html="DataHashGUI.html" Icon="DataHashIcon.png" Help="" SDKVersion="10.1">
+  <GuiSettings Html="DataHashGUI.html" Icon="DataHashIcon.png" Help="https://github.com/bobpeers/Alteryx_SDK_Data_Hash" SDKVersion="10.1">
     <InputConnections>
       <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection" Label="I"/>
     </InputConnections>
